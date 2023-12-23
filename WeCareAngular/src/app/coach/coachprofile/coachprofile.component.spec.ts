@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CoachprofileComponent } from './coachprofile.component';
 
 describe('CoachprofileComponent', () => {
@@ -8,10 +7,12 @@ describe('CoachprofileComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CoachprofileComponent]
+      declarations: [CoachprofileComponent]
     })
     .compileComponents();
-    
+  });
+  
+  beforeEach(() => {
     fixture = TestBed.createComponent(CoachprofileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

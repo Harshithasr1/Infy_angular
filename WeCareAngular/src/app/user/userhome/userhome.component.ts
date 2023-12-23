@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-userhome',
-  standalone: true,
-  imports: [],
   templateUrl: './userhome.component.html',
   styleUrl: './userhome.component.css'
 })
-export class UserhomeComponent {
+export class UserhomeComponent implements OnInit{
+  constructor() {}
+  ngOnInit(): void {
+  }
+}
 
+function dateCalculator(fc: FormControl){
+  
 }
